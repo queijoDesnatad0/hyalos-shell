@@ -1,2 +1,2 @@
 # hyalos-shell
-Glasmorphic dotfiles for hyprland
+Glasmorphic dotfiles for hyprland ( under development )
