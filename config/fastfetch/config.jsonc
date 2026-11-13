@@ -1,0 +1,173 @@
+{
+  "logo": {
+    "type": "auto",
+    "source": "",
+    "color": {
+      "1": "green",
+      "2": "magenta",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": ""
+    },
+    "width": null,
+    "height": null,
+    "padding": {
+      "top": 4,
+      "left": 0,
+      "bottom": 0,
+      "right": 0
+    },
+    "printRemaining": true,
+    "preserveAspectRatio": false,
+    "cache": true,
+    "position": "right",
+    "animationFrame": 1,
+    "chafa": {
+      "fgOnly": false,
+      "symbols": "block+border+space-wide-inverted"
+    }
+  },
+  "display": {
+    "stat": false,
+    "pipe": false,
+    "showErrors": false,
+    "disableLinewrap": false,
+    "hideCursor": false,
+    "separator": ": ",
+    "color": {
+      "keys": "magenta",
+      "title": "green",
+      "output": "",
+      "separator": "white"
+    },
+    "brightColor": true,
+    "duration": {
+      "abbreviation": false,
+      "spaceBeforeUnit": "default"
+    },
+    "size": {
+      "maxPrefix": "YB",
+      "binaryPrefix": "iec",
+      "ndigits": 2,
+      "spaceBeforeUnit": "default"
+    },
+    "temp": {
+      "unit": "D",
+      "ndigits": 1,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91"
+      },
+      "spaceBeforeUnit": "default"
+    },
+    "percent": {
+      "type": [
+        "num",
+        "num-color"
+      ],
+      "ndigits": 0,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91"
+      },
+      "spaceBeforeUnit": "default",
+      "width": 0
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "-"
+      },
+      "border": {
+        "left": "[ ",
+        "right": " ]",
+        "leftElapsed": "",
+        "rightElapsed": ""
+      },
+      "color": {
+        "elapsed": "auto",
+        "total": "97",
+        "border": "97"
+      },
+      "width": 10
+    },
+    "fraction": {
+      "ndigits": 2,
+      "trailingZeros": "default"
+    },
+    "noBuffer": false,
+    "key": {
+      "width": 0,
+      "type": "string",
+      "paddingLeft": 0,
+      "language": "en"
+    },
+    "freq": {
+      "ndigits": 2,
+      "spaceBeforeUnit": "default"
+    },
+    "constants": []
+  },
+  "general": {
+    "thread": true,
+    "processingTimeout": 5000,
+    "detectVersion": true,
+    "playerName": "",
+    "dsForceDrm": false
+  },
+
+
+
+  "modules": [
+
+//    { "type": "title", "key": " ", "keyIcon": "", "fqdn": false, "color": { "user": "", "at": "", "host": "" } },
+
+    { "type": "separator", "string": "-", "outputColor": "", "times": 0 },
+
+    { "type": "os", "key": "SO", "keyIcon": "" },
+    { "type": "host", "key": "Hoste", "keyIcon": "󰌢"},
+    { "type": "kernel", "key": "Quernel", "keyIcon": "" },
+
+    { "type": "separator", "string": "-", "outputColor": "", "times": 0 },
+
+    { "type": "cpu",    "key": "Processeiro", "keyIcon": "", "temp": false, "showPeCoreCount": true, "tempSensor": "" },
+    { "type": "gpu",    "key": "RTX?", "keyIcon": "󰾲", "driverSpecific": false, "detectionMethod": "pci", "temp": false, "hideType": "none", "percent": { "green": 50, "yellow": 80, "type": 0 } },
+    { "type": "memory", "key": "RAM", "keyIcon": "", "percent": { "green": 50, "yellow": 80, "type": 0 } },
+    { "type": "swap",   "key": "Troca", "percent": { "green": 50, "yellow": 80, "type": 0 }, "keyIcon": "󰓡", "separate": false },
+    { "type": "disk",   "key": "Disco Rígido", "keyIcon": "", "showRegular": true, "showExternal": true, "showHidden": false, "showSubvolumes": false, "showReadOnly": true,
+      "showUnknown": false,"folders": "", "hideFolders": "/efi:/boot:/boot/*", "hideFS": "", "useAvailable": false, "percent": { "green": 50, "yellow": 80, "type": 0 } },
+    
+    { "type": "display", "key": "Tela", "keyIcon": "󰍹", "compactType": "none", "preciseRefreshRate": false, "order": null },
+    
+    { "type": "separator", "string": "-", "outputColor": "", "times": 0 },
+
+    { "type": "uptime",   "key": "Tempo acima", "keyIcon": "" },
+    { "type": "packages", "key": "PKGS", "keyIcon": "󰏖", "disabled": [ "apk" ], "combined": false },
+    
+    { "type": "separator", "string": "-", "outputColor": "", "times": 0 },
+    
+    { "type": "shell", "key": "Concha", "keyIcon": "" },
+    { "type": "terminal", "keyIcon": "" },
+    { "type": "terminalfont", "key": "Fonte do Terminal", "keyIcon": "" },
+
+    { "type": "separator", "string": "-", "outputColor": "", "times": 0 },
+
+    { "type": "cursor", "keyIcon": "󰆿" },
+    { "type": "icons", "key": "Ícones", "keyIcon": "" },
+    { "type": "wm", "key": "Manejador de Janela", "keyIcon": "", "detectPlugin": true },
+//    { "type": "wmtheme", "keyIcon": "󰓸" },
+//    { "type": "font", "keyIcon": "" },
+//    { "type": "de", "keyIcon": "" },
+//    { "type": "theme", "keyIcon": "󰉼" },
+    
+    { "type": "separator", "string": "-", "outputColor": "", "times": 0 },
+
+    { "type": "colors", "key": " ", "keyIcon": "", "symbol": "block", "paddingLeft": 0, "block": { "width": 4, "range": [0,15]}, "brightness": "default" }
+  ]
+}
